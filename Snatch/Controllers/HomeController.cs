@@ -10,6 +10,8 @@ namespace Snatch.Controllers
     {
         public ActionResult Index()
         {
+
+
             return View();
         }
 
