@@ -19,7 +19,31 @@
 
     @*@Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")*@
+    <style>
 
+        /*  photo gallery */
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+    </style>
 </head>
 <body id="page-top" class="index">
 
@@ -129,7 +153,7 @@
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                                <i class="fa fa-play fa-3x"></i>
                             </div>
                         </div>
                         <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
@@ -143,7 +167,7 @@
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                                <i class="fa fa-play fa-3x"></i>
                             </div>
                         </div>
                         <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
@@ -157,7 +181,7 @@
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                                <i class="fa fa-play fa-3x"></i>
                             </div>
                         </div>
                         <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
@@ -571,8 +595,28 @@
                             <div class="modal-body">
                                 <h2>Application Design</h2>
                                 <p class="item-intro text-muted">Fluid User Interface Expirience</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
-                                <strong>Social shopping app<br /> </strong>
+                                <div class="gallery">
+                                    <a target="_blank" href="img/portfolio/screenshot1.jpeg">
+                                        <img src="img/portfolio/screenshot1.jpeg" width="120" height="200">
+                                    </a>
+                                    <div class="desc">Main Items list Screen</div>
+                                </div>
+
+                                <div class="gallery">
+                                    <a target="_blank" href="img/portfolio/screenshot3.jpeg">
+                                        <img src="img/portfolio/screenshot3.jpeg" width="120" height="200">
+                                    </a>
+                                    <div class="desc">Options Menu</div>
+                                </div>
+
+                                <div class="gallery">
+                                    <a target="_blank" href="img/portfolio/screenshot2.jpeg">
+                                        <img src="img/portfolio/screenshot2.jpeg" width="120" height="200">
+                                    </a>
+                                    <div class="desc">Item Details</div>
+                                </div>
+
+                                <strong>Social shopping app<br /> <br /></strong>
                                 <p>To sell a product you'll take a picture and upload it in the simplest way, and to buy a product you'll swipe it right and contact the seller.</p>
 
                                 <ul class="list-inline">
